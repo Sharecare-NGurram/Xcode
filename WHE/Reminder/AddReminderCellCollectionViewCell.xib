@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddReminderCellCollectionViewCell" id="gTV-IL-0wX" customClass="AddReminderCellCollectionViewCell" customModule="WHE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="59"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0y-Fa-dRc">
+                        <rect key="frame" x="0.0" y="12" width="135" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="T0y-Fa-dRc" secondAttribute="bottom" constant="12" id="4ny-Dj-8Pu"/>
+                <constraint firstItem="T0y-Fa-dRc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9eC-I1-bap"/>
+                <constraint firstItem="T0y-Fa-dRc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="xnv-80-EeF"/>
+                <constraint firstAttribute="trailing" secondItem="T0y-Fa-dRc" secondAttribute="trailing" constant="10" id="zLx-ha-3Rh"/>
+            </constraints>
+            <size key="customSize" width="210" height="90"/>
+            <connections>
+                <outlet property="reminderTimeButton" destination="T0y-Fa-dRc" id="xmm-8v-E4c"/>
+            </connections>
+            <point key="canvasLocation" x="106.10687022900763" y="-33.450704225352112"/>
+        </collectionViewCell>
+    </objects>
+</document>

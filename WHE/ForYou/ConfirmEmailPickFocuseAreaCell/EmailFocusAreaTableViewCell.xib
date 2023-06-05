@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ElevanceSans-Medium.otf">
+            <string>ElevanceSans-Medium</string>
+        </array>
+        <array key="ElevanceSans-Semibold.otf">
+            <string>ElevanceSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmailFocusAreaTableViewCell" rowHeight="170" id="KGk-i7-Jjw" customClass="EmailFocusAreaTableViewCell" customModule="WHE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAC-bs-WHI">
+                        <rect key="frame" x="10" y="10" width="440" height="153"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1y-Ws-vE1">
+                                <rect key="frame" x="0.0" y="7" width="300" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="hMJ-kp-gAF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Semibold" family="Elevance Sans" pointSize="20"/>
+                                <color key="textColor" red="0.13725490196078433" green="0.11764705882352941" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starGray" translatesAutoresizingMaskIntoConstraints="NO" id="Y1f-tS-eEp">
+                                <rect key="frame" x="0.0" y="118.66666666666666" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="RtX-rj-kNB"/>
+                                    <constraint firstAttribute="width" constant="25" id="kuz-4f-cH2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select one or two things to focus on and start earning rewards. Select one or two things to focus " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gz6-kh-liS">
+                                <rect key="frame" x="0.0" y="35" width="300" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="lA3-Zu-55u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Medium" family="Elevance Sans" pointSize="17"/>
+                                <color key="textColor" red="0.43137254901960786" green="0.41960784313725491" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2I-Eq-wRN">
+                                <rect key="frame" x="320" y="7" width="90" height="44"/>
+                                <color key="backgroundColor" red="0.47450980392156861" green="0.29803921568627451" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bBR-Zq-a8j"/>
+                                    <constraint firstAttribute="width" constant="90" id="j9h-wj-VYV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Semibold" family="Elevance Sans" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Confirm"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part of a reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pug-ZX-Jxd">
+                                <rect key="frame" x="32" y="119" width="398" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="oLa-0H-Vfa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Medium" family="Elevance Sans" pointSize="17"/>
+                                <color key="textColor" red="0.43137254901960786" green="0.41960784313725491" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T1y-Ws-vE1" firstAttribute="leading" secondItem="jAC-bs-WHI" secondAttribute="leading" id="5mJ-Qx-wqp"/>
+                            <constraint firstItem="Pug-ZX-Jxd" firstAttribute="top" secondItem="Gz6-kh-liS" secondAttribute="bottom" constant="8" id="8XN-CM-Jre"/>
+                            <constraint firstItem="Y1f-tS-eEp" firstAttribute="leading" secondItem="jAC-bs-WHI" secondAttribute="leading" id="EHo-1r-ETd"/>
+                            <constraint firstItem="b2I-Eq-wRN" firstAttribute="top" secondItem="jAC-bs-WHI" secondAttribute="top" constant="7" id="G81-wN-4mh"/>
+                            <constraint firstItem="Pug-ZX-Jxd" firstAttribute="leading" secondItem="Y1f-tS-eEp" secondAttribute="trailing" constant="7" id="OhE-fo-hUU"/>
+                            <constraint firstItem="Gz6-kh-liS" firstAttribute="trailing" secondItem="T1y-Ws-vE1" secondAttribute="trailing" id="QfV-to-SY3"/>
+                            <constraint firstItem="b2I-Eq-wRN" firstAttribute="leading" secondItem="T1y-Ws-vE1" secondAttribute="trailing" constant="20" id="UiC-Gl-w4m"/>
+                            <constraint firstItem="T1y-Ws-vE1" firstAttribute="top" secondItem="jAC-bs-WHI" secondAttribute="top" constant="7" id="VrV-3J-zbB"/>
+                            <constraint firstItem="Gz6-kh-liS" firstAttribute="top" secondItem="T1y-Ws-vE1" secondAttribute="bottom" constant="4" id="Ymd-TO-vGu"/>
+                            <constraint firstAttribute="bottom" secondItem="Pug-ZX-Jxd" secondAttribute="bottom" constant="10" id="hCA-J7-GNe"/>
+                            <constraint firstAttribute="trailing" secondItem="Pug-ZX-Jxd" secondAttribute="trailing" constant="10" id="k04-iQ-rKi"/>
+                            <constraint firstItem="Gz6-kh-liS" firstAttribute="leading" secondItem="jAC-bs-WHI" secondAttribute="leading" id="tjy-nL-6qe"/>
+                            <constraint firstAttribute="trailing" secondItem="b2I-Eq-wRN" secondAttribute="trailing" constant="30" id="txk-VR-brq"/>
+                            <constraint firstItem="Y1f-tS-eEp" firstAttribute="centerY" secondItem="Pug-ZX-Jxd" secondAttribute="centerY" id="weO-z6-1bm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jAC-bs-WHI" secondAttribute="trailing" id="CBp-wX-u50"/>
+                    <constraint firstItem="jAC-bs-WHI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="OZe-n9-2ri"/>
+                    <constraint firstAttribute="bottom" secondItem="jAC-bs-WHI" secondAttribute="bottom" constant="4" id="RdU-EQ-56H"/>
+                    <constraint firstItem="jAC-bs-WHI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Sca-aX-eSV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="buttonOutlet" destination="b2I-Eq-wRN" id="EZA-XU-n78"/>
+                <outlet property="descriptionTitleLabel" destination="Gz6-kh-liS" id="OMM-gw-1oq"/>
+                <outlet property="headerTitleLabel" destination="T1y-Ws-vE1" id="esl-o9-Giz"/>
+                <outlet property="rewardsImageview" destination="Y1f-tS-eEp" id="mH1-6j-ijP"/>
+                <outlet property="rewardsTitleLabel" destination="Pug-ZX-Jxd" id="8Sq-Ef-mLH"/>
+            </connections>
+            <point key="canvasLocation" x="166.41221374045801" y="27.112676056338028"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="starGray" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

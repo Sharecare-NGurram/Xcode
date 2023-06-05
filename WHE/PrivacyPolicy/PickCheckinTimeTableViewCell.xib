@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ElevanceSans-Medium.otf">
+            <string>ElevanceSans-Medium</string>
+        </array>
+        <array key="ElevanceSans-Semibold.otf">
+            <string>ElevanceSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickCheckinTimeTableViewCell" rowHeight="153" id="1k3-cd-pAw" customClass="PickCheckinTimeTableViewCell" customModule="WHE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1k3-cd-pAw" id="SQm-3y-Abz">
+                <rect key="frame" x="0.0" y="0.0" width="466" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gth-9u-6aF">
+                        <rect key="frame" x="10" y="10" width="456" height="136"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a check in time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExX-kg-9CS">
+                                <rect key="frame" x="22" y="7" width="294" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="9wX-Aq-ODp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Semibold" family="Elevance Sans" pointSize="20"/>
+                                <color key="textColor" red="0.13725490200000001" green="0.1176470588" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starGray" translatesAutoresizingMaskIntoConstraints="NO" id="0hg-9c-V03">
+                                <rect key="frame" x="22" y="87.333333333333329" width="17" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="MRY-Mz-8nt"/>
+                                    <constraint firstAttribute="width" constant="17" id="sqe-Ny-UHr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For when we’ll check in with you each day." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y29-Yr-qza">
+                                <rect key="frame" x="22" y="39" width="294" height="37.333333333333343"/>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Medium" family="Elevance Sans" pointSize="17"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.41960784309999999" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-Vl-gex">
+                                <rect key="frame" x="336" y="7" width="90" height="44"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.29803921570000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="KKE-8k-Gbs"/>
+                                    <constraint firstAttribute="height" constant="44" id="Sgk-CM-pjc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Semibold" family="Elevance Sans" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Pick"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part of a reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gb-Si-5hV">
+                                <rect key="frame" x="51" y="83.666666666666671" width="385" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="meG-nU-rkL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Medium" family="Elevance Sans" pointSize="17"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.41960784309999999" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pX-cq-AVL">
+                                <rect key="frame" x="22" y="131" width="434" height="1"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="yTk-kE-Mnx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5pX-cq-AVL" firstAttribute="leading" secondItem="Gth-9u-6aF" secondAttribute="leading" constant="22" id="8JB-Iw-jyy"/>
+                            <constraint firstItem="HDh-Vl-gex" firstAttribute="leading" secondItem="ExX-kg-9CS" secondAttribute="trailing" constant="20" id="94w-YZ-91z"/>
+                            <constraint firstItem="ExX-kg-9CS" firstAttribute="top" secondItem="Gth-9u-6aF" secondAttribute="top" constant="7" id="Bip-5U-QJM"/>
+                            <constraint firstItem="4Gb-Si-5hV" firstAttribute="leading" secondItem="0hg-9c-V03" secondAttribute="trailing" constant="12" id="Fth-PK-Inj"/>
+                            <constraint firstAttribute="trailing" secondItem="HDh-Vl-gex" secondAttribute="trailing" constant="30" id="J3h-d1-QiF"/>
+                            <constraint firstAttribute="bottom" secondItem="4Gb-Si-5hV" secondAttribute="bottom" constant="28.329999999999998" id="JDr-3w-6Pv"/>
+                            <constraint firstItem="y29-Yr-qza" firstAttribute="top" secondItem="ExX-kg-9CS" secondAttribute="bottom" constant="8" id="JRt-wd-3Hp"/>
+                            <constraint firstItem="HDh-Vl-gex" firstAttribute="leading" secondItem="y29-Yr-qza" secondAttribute="trailing" constant="20" id="NUh-1m-us4"/>
+                            <constraint firstItem="4Gb-Si-5hV" firstAttribute="centerY" secondItem="0hg-9c-V03" secondAttribute="centerY" id="TCq-6b-yMb"/>
+                            <constraint firstAttribute="trailing" secondItem="4Gb-Si-5hV" secondAttribute="trailing" constant="20" id="VNK-Ig-Cho"/>
+                            <constraint firstItem="0hg-9c-V03" firstAttribute="top" secondItem="y29-Yr-qza" secondAttribute="bottom" constant="11" id="Y39-YR-bq4"/>
+                            <constraint firstItem="y29-Yr-qza" firstAttribute="leading" secondItem="Gth-9u-6aF" secondAttribute="leading" constant="22" id="a2s-HL-OWt"/>
+                            <constraint firstItem="HDh-Vl-gex" firstAttribute="top" secondItem="Gth-9u-6aF" secondAttribute="top" constant="7" id="fbf-He-Tvm"/>
+                            <constraint firstItem="ExX-kg-9CS" firstAttribute="leading" secondItem="Gth-9u-6aF" secondAttribute="leading" constant="22" id="gty-IB-aeO"/>
+                            <constraint firstItem="0hg-9c-V03" firstAttribute="leading" secondItem="Gth-9u-6aF" secondAttribute="leading" constant="22" id="gyn-6W-icg"/>
+                            <constraint firstAttribute="bottom" secondItem="5pX-cq-AVL" secondAttribute="bottom" constant="4" id="xQL-Mx-Tsv"/>
+                            <constraint firstAttribute="trailing" secondItem="5pX-cq-AVL" secondAttribute="trailing" id="yqq-jN-YQG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Gth-9u-6aF" secondAttribute="trailing" id="Th2-CF-2SL"/>
+                    <constraint firstAttribute="bottom" secondItem="Gth-9u-6aF" secondAttribute="bottom" constant="4" id="frc-h1-WM1"/>
+                    <constraint firstItem="Gth-9u-6aF" firstAttribute="top" secondItem="SQm-3y-Abz" secondAttribute="top" constant="10" id="j6D-BE-191"/>
+                    <constraint firstItem="Gth-9u-6aF" firstAttribute="leading" secondItem="SQm-3y-Abz" secondAttribute="leading" constant="10" id="xhY-Sj-qdT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="JnO-KO-FPg"/>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="descLbl" destination="y29-Yr-qza" id="iih-6l-4hk"/>
+                <outlet property="pickBtn" destination="HDh-Vl-gex" id="1Br-fi-0UE"/>
+                <outlet property="pickLbl" destination="ExX-kg-9CS" id="ILk-Q0-5nr"/>
+                <outlet property="rewardsImg" destination="TCq-6b-yMb" id="431-EC-N4b"/>
+                <outlet property="rewardsLbl" destination="4Gb-Si-5hV" id="Fle-Ph-KFo"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="20.422535211267608"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="starGray" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ElevanceSans-Semibold.otf">
+            <string>ElevanceSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="NewPrescriptionTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewPrescriptionTableViewCell" rowHeight="44" id="KGk-i7-Jjw" customClass="NewPrescriptionTableViewCell" customModule="WHE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzU-0U-iXq">
+                        <rect key="frame" x="0.0" y="15" width="329" height="24"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pill_capsule_white" translatesAutoresizingMaskIntoConstraints="NO" id="cq5-fe-EB2">
+                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="5pw-Sw-oJI"/>
+                                    <constraint firstAttribute="width" constant="24" id="Dzt-7d-FK9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fancy Medication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLc-8G-Un8">
+                                <rect key="frame" x="34" y="0.0" width="263" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="4En-6K-I7c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Semibold" family="Elevance Sans" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rF-XW-cxT">
+                                <rect key="frame" x="301" y="3" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="Arc-Xy-cgk"/>
+                                    <constraint firstAttribute="height" constant="18" id="Gw3-Ui-qVw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" "/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qLc-8G-Un8" firstAttribute="centerY" secondItem="AzU-0U-iXq" secondAttribute="centerY" id="JbY-A7-x5e"/>
+                            <constraint firstAttribute="height" constant="24" id="QWw-qZ-Q1i"/>
+                            <constraint firstItem="cq5-fe-EB2" firstAttribute="leading" secondItem="AzU-0U-iXq" secondAttribute="leading" id="aEG-wE-uxO"/>
+                            <constraint firstItem="2rF-XW-cxT" firstAttribute="centerY" secondItem="AzU-0U-iXq" secondAttribute="centerY" id="pAD-kJ-ykL"/>
+                            <constraint firstItem="qLc-8G-Un8" firstAttribute="leading" secondItem="cq5-fe-EB2" secondAttribute="trailing" constant="10" id="pvo-hd-dQI"/>
+                            <constraint firstItem="2rF-XW-cxT" firstAttribute="leading" secondItem="qLc-8G-Un8" secondAttribute="trailing" constant="4" id="spV-nN-JMG"/>
+                            <constraint firstItem="cq5-fe-EB2" firstAttribute="centerY" secondItem="AzU-0U-iXq" secondAttribute="centerY" id="uRm-aT-5T9"/>
+                            <constraint firstAttribute="trailing" secondItem="2rF-XW-cxT" secondAttribute="trailing" constant="10" id="uUE-PC-heU"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaD-rb-ZqK">
+                        <rect key="frame" x="0.0" y="54" width="329" height="2"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Ocf-Ql-Qos"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.31372549019607843" green="0.035294117647058823" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AzU-0U-iXq" secondAttribute="trailing" id="5Rl-FQ-l10"/>
+                    <constraint firstItem="kaD-rb-ZqK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9mQ-09-O0i"/>
+                    <constraint firstItem="AzU-0U-iXq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LK4-YK-FBy"/>
+                    <constraint firstAttribute="trailing" secondItem="kaD-rb-ZqK" secondAttribute="trailing" id="YIj-5y-ZLf"/>
+                    <constraint firstItem="kaD-rb-ZqK" firstAttribute="top" secondItem="AzU-0U-iXq" secondAttribute="bottom" constant="15" id="c6V-uK-QVE"/>
+                    <constraint firstAttribute="bottom" secondItem="kaD-rb-ZqK" secondAttribute="bottom" id="jH4-nc-Dw6"/>
+                    <constraint firstItem="AzU-0U-iXq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="wOg-zk-tst"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonWidthConstraint" destination="Arc-Xy-cgk" id="JWd-KQ-KMp"/>
+                <outlet property="newPrescriptionImageview" destination="cq5-fe-EB2" id="bCg-5l-4j2"/>
+                <outlet property="newPrescriptionSelectionButton" destination="2rF-XW-cxT" id="JiZ-wA-cBO"/>
+                <outlet property="newPrescriptionTitleLabel" destination="qLc-8G-Un8" id="3v9-Kp-OQB"/>
+            </connections>
+            <point key="canvasLocation" x="-28.244274809160306" y="-1.4084507042253522"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pill_capsule_white" width="24" height="24"/>
+    </resources>
+</document>

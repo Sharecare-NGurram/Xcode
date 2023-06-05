@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ElevanceSans-Medium.otf">
+            <string>ElevanceSans-Medium</string>
+        </array>
+        <array key="ElevanceSans-Semibold.otf">
+            <string>ElevanceSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListOfAddMedicationTableViewCell" rowHeight="99" id="KGk-i7-Jjw" customClass="ListOfAddMedicationTableViewCell" customModule="WHE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="495" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="495" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbk-m0-vnU">
+                        <rect key="frame" x="0.0" y="5" width="495" height="89"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diovan HCTDi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beO-Xd-FEV">
+                                <rect key="frame" x="20" y="10" width="405" height="40"/>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Semibold" family="Elevance Sans" pointSize="18"/>
+                                <color key="textColor" red="0.13725490196078433" green="0.11764705882352941" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="160mg oral tablet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcl-hk-2Yx">
+                                <rect key="frame" x="20" y="55" width="405" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="yxN-CS-JWZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ElevanceSans-Medium" family="Elevance Sans" pointSize="16"/>
+                                <color key="textColor" red="0.43137254901960786" green="0.41960784313725491" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron_right" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-yA-Sgj">
+                                <rect key="frame" x="450" y="34.666666666666664" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="eIS-fQ-a44"/>
+                                    <constraint firstAttribute="width" constant="20" id="fYu-kV-NIH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VVv-yA-Sgj" firstAttribute="leading" secondItem="beO-Xd-FEV" secondAttribute="trailing" constant="25" id="1fc-Mv-ynx"/>
+                            <constraint firstItem="beO-Xd-FEV" firstAttribute="leading" secondItem="qbk-m0-vnU" secondAttribute="leading" constant="20" id="4wB-rL-fPz"/>
+                            <constraint firstAttribute="trailing" secondItem="VVv-yA-Sgj" secondAttribute="trailing" constant="25" id="BfV-re-bkG"/>
+                            <constraint firstItem="VVv-yA-Sgj" firstAttribute="centerY" secondItem="qbk-m0-vnU" secondAttribute="centerY" id="CHT-mV-GHk"/>
+                            <constraint firstItem="gcl-hk-2Yx" firstAttribute="trailing" secondItem="beO-Xd-FEV" secondAttribute="trailing" id="Qj1-fg-acA"/>
+                            <constraint firstItem="gcl-hk-2Yx" firstAttribute="top" secondItem="beO-Xd-FEV" secondAttribute="bottom" constant="5" id="WK1-b3-Qcr"/>
+                            <constraint firstAttribute="bottom" secondItem="gcl-hk-2Yx" secondAttribute="bottom" constant="10" id="dRy-nv-Ro1"/>
+                            <constraint firstItem="beO-Xd-FEV" firstAttribute="top" secondItem="qbk-m0-vnU" secondAttribute="top" constant="10" id="gfE-FB-yEp"/>
+                            <constraint firstItem="gcl-hk-2Yx" firstAttribute="leading" secondItem="qbk-m0-vnU" secondAttribute="leading" constant="20" id="uwR-Xh-mJ9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qbk-m0-vnU" secondAttribute="trailing" id="U9e-IT-Ia1"/>
+                    <constraint firstItem="qbk-m0-vnU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="XcX-MF-scQ"/>
+                    <constraint firstItem="qbk-m0-vnU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gg3-IA-QXC"/>
+                    <constraint firstAttribute="bottom" secondItem="qbk-m0-vnU" secondAttribute="bottom" constant="5" id="yow-dh-kl9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addMedsBGView" destination="qbk-m0-vnU" id="9NU-ZA-LXc"/>
+                <outlet property="addMedsDescrptionLabel" destination="gcl-hk-2Yx" id="fMO-b8-IHn"/>
+                <outlet property="addMedsHeaderTitle" destination="beO-Xd-FEV" id="i1N-Ls-jEh"/>
+            </connections>
+            <point key="canvasLocation" x="129.00763358778624" y="4.5774647887323949"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron_right" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

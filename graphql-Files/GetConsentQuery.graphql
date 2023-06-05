@@ -1,0 +1,13 @@
+
+query GetConsentQuery {
+  needConsent(Accept_Language: "EN") {
+    content
+    contentId
+    created
+    languageCode
+    source
+    version
+    type
+    tenantId
+  }
+}

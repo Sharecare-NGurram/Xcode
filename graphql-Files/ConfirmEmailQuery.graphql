@@ -1,0 +1,10 @@
+query ConfirmEmailQuery {
+  xpoProfile {
+    userProfile {
+      email {
+        isMfaValidated
+        isPrimary
+      }
+    }
+  }
+}

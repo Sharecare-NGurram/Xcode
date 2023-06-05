@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ElevanceSans-Bold.otf</string>
+		<string>ElevanceSans-BoldItalic.otf</string>
+		<string>ElevanceSans-Italic.otf</string>
+		<string>ElevanceSans-Light.otf</string>
+		<string>ElevanceSans-LightItalic.otf</string>
+		<string>ElevanceSans-Medium.otf</string>
+		<string>ElevanceSans-MediumItalic.otf</string>
+		<string>ElevanceSans-Regular.otf</string>
+		<string>ElevanceSans-Semibold.otf</string>
+		<string>ElevanceSans-SemiboldItalic.otf</string>
+		<string>ElevanceSansCondensed-Bold.otf</string>
+		<string>ElevanceSansCondensed-BoldItalic.otf</string>
+		<string>ElevanceSansCondensed-Italic.otf</string>
+		<string>ElevanceSansCondensed-Light.otf</string>
+		<string>ElevanceSansCondensed-LightItalic.otf</string>
+		<string>ElevanceSansCondensed-Medium.otf</string>
+		<string>ElevanceSansCondensed-MediumItalic.otf</string>
+		<string>ElevanceSansCondensed-Regular.otf</string>
+		<string>ElevanceSansCondensed-Semibold.otf</string>
+		<string>ElevanceSansCondensed-SemiboldItalic.otf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
